@@ -1,0 +1,5 @@
+<template bindable="list">
+   <ul>
+      <li repeat.for="item of list.entries" click.delegate="navigate(item)">${item.entry.name}</li>
+   </ul>
+</template>

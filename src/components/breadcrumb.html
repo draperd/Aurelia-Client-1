@@ -1,0 +1,8 @@
+<template bindable="relativePath">
+   <nav role='navigation'>
+      <p id='breadcrumblabel'>You are here: ${relativePath}</p>
+      <ol id='breadcrumb' aria-labelledby='breadcrumblabel'>
+         <li role='link' repeat.for="breadcrumb of breadcrumbs" click.delegate="navigate(breadcrumb)">${breadcrumb.label}</li>
+      </ol>
+   </nav>
+</template>
